@@ -1,0 +1,27 @@
+[
+  {
+      "nome": "HTML",
+      "range": "50%"
+  },
+  {
+      "nome": "CSS",
+      "range": "50%"
+  },
+  {
+      "nome": "Javascript",
+      "range": "90%"
+
+  },
+  {
+      "nome": "Nodejs",
+      "range": "90%"
+  },
+  {
+      "nome": "MongoDB",
+      "range": "60"
+  },
+  {
+      "nome": "Git/GitHub",
+      "range": "70%"
+  }
+]

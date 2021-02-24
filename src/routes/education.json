@@ -1,0 +1,20 @@
+[
+  {
+    "curso": "Programador Web",
+    "instituicao": "Senac - PE",
+    "periodo": "Nov/2020 a Mar/2021",
+    "resumo": "Toda iniciação de desenvolvimento web"
+  },
+  {
+    "curso": "Desenvolvedora BeckEnd",
+    "instituicao": "Bootcamp Reprograma",
+    "periodo": "Ago/2020 a Dez/2020",
+    "resumo": "JavaScript; NodeJs; GitHub; Git; MongoDB;"
+  },
+  {
+    "curso": "Tecnológo em Gatronomia",
+    "instituicao": "Faculdade Senac - PE",
+    "periodo": "Ago/2013 a Dez/2016",
+    "resumo": "Técnicas de cozinnha; Organização e gerenciamento de empreendimentos gastronômicos"
+  }
+]

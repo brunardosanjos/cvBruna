@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Bruna Roberta Andrade dos Anjos</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/w3.css">
+  <link rel="stylesheet" href="css/materialdesignicons.css">
+  <link rel="stylesheet" href="css/materialdesignicons.css.map">
+  <link rel="manifest" href="../../manifest.json">
+  <link rel="shortcut icon" href="../assets/img/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/style.css">
+
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('../../sw.js')
+        .then(function () {
+          console.log('Service registrado')
+        })
+        .catch(function () {
+          console.log('Service falhou')
+        })
+    }
+  </script>
+</head>
+
+<body class="w3-light-grey">
+
+  <!-- Page Container -->
+  <div class="w3-content w3-margin-top" style="max-width:1400px;">
+
+    <!-- The Grid -->
+    <div class="w3-row-padding">
+
+      <!-- Left Column -->
+      <div class="w3-third">
+
+        <div class="w3-white w3-text-grey w3-card-4">
+          <div class="w3-display-container">
+            <img src="../assets/img/bruna_img.jpg" style="width:100%" alt="Avatar">
+            <div class="w3-display-bottomleft w3-container w3-text-black">
+              <h2 style="color: aliceblue;">
+                <%=pessoa.nome%>
+              </h2>
+            </div>
+          </div>
+          <div class="w3-container">
+            <!--Profissão-->
+            <p><i class="mdi mdi-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>
+              <%=pessoa.profissao%>
+            </p>
+            <!--Endereço-->
+            <p><i class="mdi mdi-home fa-fw w3-margin-right w3-large w3-text-teal"></i>
+              <%=pessoa.endereco%>
+            </p>
+            <!--Email-->
+            <p><i class="mdi mdi-email fa-fw w3-margin-right w3-large w3-text-teal"></i>
+              <%=pessoa.email%>
+            </p>
+            <!--Telefone-->
+            <p><i class="mdi mdi-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>
+              <%=pessoa.telefone%>
+            </p>
+            <hr>
+
+            <p class="w3-large"><b><i class="mdi mdi-asterisk fa-fw w3-margin-right w3-text-teal"></i>Skills</b>
+            </p>
+
+            <%for(skill of skills){ %>
+              <p>
+                <%=skill.nome%>
+              </p>
+              <div class="w3-light-grey w3-round-xlarge w3-small">
+                <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:<%=skill.range%>">
+                  <%=skill.range%>
+                </div>
+              </div>
+              <%}%>
+                <br>
+
+                <p class="w3-large w3-text-theme"><b><i
+                      class="mdi mdi-globe fa-fw w3-margin-right w3-text-teal"></i>Idiomas</b></p>
+
+                <%for(idioma of idiomas){ %>
+                  <p>
+                    <%=idioma.nome%>
+                  </p>
+                  <div class="w3-light-grey w3-round-xlarge w3-small">
+                    <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:<%=idioma.range%>">
+                      <%=idioma.range%>
+                    </div>
+                  </div>
+                  <%}%>
+                    <br>
+          </div>
+        </div><br>
+
+        <!-- End Left Column -->
+      </div>
+
+      <!-- Right Column -->
+      <div class="w3-twothird">
+
+        <div class="w3-container w3-card w3-white w3-margin-bottom">
+          <h2 class="w3-text-grey w3-padding-16"><i
+              class="mdi mdi-briefcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Experiência de Trabalho</h2>
+          <%for(exp of experiences){ %>
+            <div class="w3-container">
+              <h5 class="w3-opacity"><b>
+                  <p>
+                    <%=exp.job%>
+                  </p>
+                </b></h5>
+              <h6 class="w3-text-teal"><i class="mdi mdi-calendar fa-fw w3-margin-right"></i>
+                <%=exp.data%>
+              </h6>
+              <p>
+                <%=exp.desc%>
+              </p>
+              <hr>
+            </div>
+            <%}%>
+        </div>
+
+        <div class="w3-container w3-card w3-white">
+          <h2 class="w3-text-grey w3-padding-16"><i
+              class="mdi mdi-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Formação</h2>
+          <%for(edu of education){ %>
+            <div class="w3-container">
+              <h5 class="w3-opacity"><b>
+                  <%=edu.curso%>
+                </b></h5>
+              <h6 class="w3-text-teal"><i class="mdi mdi-calendar fa-fw w3-margin-right"></i>
+                <%=edu.periodo%>
+              </h6>
+              <p>
+                <%=edu.instituicao%>
+              </p>
+              <p>
+                <%=edu.resumo%>
+              </p>
+              <hr>
+            </div>
+              <%}%>
+        </div>
+
+
+            <!-- End Right Column -->
+        </div>
+
+        <!-- End Grid -->
+      </div>
+
+      <!-- End Page Container -->
+    </div>
+
+
+    <footer class="w3-container w3-teal w3-center w3-margin-top">
+      <p>Find me on social media.</p>
+      <i class="mdi mdi-facebook-official w3-hover-opacity"></i>
+      <i class="mdi mdi-instagram w3-hover-opacity"></i>
+      <i class="mdi mdi-snapchat w3-hover-opacity"></i>
+      <i class="mdi mdi-pinterest-p w3-hover-opacity"></i>
+      <i class="mdi mdi-twitter w3-hover-opacity"></i>
+      <i class="mdi mdi-linkedin w3-hover-opacity"></i>
+      <p>bruna.andrade</p>
+    </footer>
+
+</body>
+
+</html>
