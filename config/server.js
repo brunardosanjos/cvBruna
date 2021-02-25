@@ -1,9 +1,9 @@
-var express = require('express')
+const express = require('express')
 const consign = require('consign')
-var bodyparser = require('body-parser')
+const bodyparser = require('body-parser')
 const ejs = require('ejs')
 
-var app = express()
+const app = express()
 
 app.set('view engine', 'ejs')
 app.set('views', './views')
